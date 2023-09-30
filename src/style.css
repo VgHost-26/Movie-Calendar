@@ -170,18 +170,14 @@ input:focus, select:focus{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    img{
-        border-radius: 100%;
-        height: 100%;
-        outline: 1px solid var(--theme-color);
-    }
     
 }
-:-webkit-.profile-image>img{
+.profile-image>img{
     height: 100% ;
     border-radius: 100%;
     outline: 1px solid var(--theme-color);
 }
+
 .login-panel>button{
     
     border-radius: 100px;
