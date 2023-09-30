@@ -1,0 +1,5 @@
+{
+  "projects": {
+    "default": "VITE_PROJECT_ID"
+  }
+}
