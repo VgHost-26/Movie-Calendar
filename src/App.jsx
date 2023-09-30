@@ -12,6 +12,7 @@ import { getDocs, collection, addDoc, doc, deleteDoc } from "firebase/firestore"
 import { signInWithPopup, signOut } from "firebase/auth"
 import { ref, listAll, getDownloadURL } from "firebase/storage"
 import { platforms } from "./globals"
+import PicScout from "picscout"
 
 export default function App() {
   const [hiddenSidePanel, setHiddenSidePanel] = useState(false)
@@ -173,6 +174,8 @@ export default function App() {
       console.log(error)
     }
   }
+
+
 
   return (
     <>
