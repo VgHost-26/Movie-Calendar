@@ -158,9 +158,9 @@ input:focus, select:focus{
     gap: 10px;
     grid-template-columns: 1fr 100px 100px;
     grid-template-rows: 50px 1fr var(--input-height-small);
-    grid-template-areas:" . .         avatar"
+    grid-template-areas:" . . avatar"
                         " . . login"
-                        " . .         settings";
+                        " . . settings";
 }
 
 .profile-image{
@@ -206,14 +206,9 @@ button:disabled{
     grid-area: side;
     backdrop-filter: blur(var(--back-blur-strong));
 
-
-    /* display: grid;
-    gap: 10px;
-    grid-template-rows: 75px 40px 1fr 40px 1fr; */
     display: flex;
     flex-flow: column;
     align-content: flex-start;
-    /* gap:10px; */
 }
 
 
@@ -328,10 +323,10 @@ button>img{
     scrollbar-color: transparent transparent;
     scrollbar-width: thin;
 }
-.movie-list[collapsed="true"]{
+.movie-list[collapsed="false"]{
     /* flex-basis: 0; */
     /* overflow: hidden; */
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 
@@ -533,6 +528,22 @@ button>img{
                              'calendar calendar';
 
     }
+    .login-panel{
+       
+        grid-template-columns: 1fr 100px;
+        grid-template-areas:" . avatar"
+                            " . login"
+                            " . settings";
+    }
     
 
+}
+@media screen and (max-width: 600px){
+    .login-panel{
+       
+        grid-template-columns: 100px ;
+        grid-template-areas:"avatar"
+                            "login"
+                            "settings";
+    }
 }
