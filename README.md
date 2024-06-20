@@ -19,12 +19,20 @@ On the left, there are two sections:
 - One for movies that are already out
 - One for upcoming premieres
 
+You can also filter the movies based on the platform
+
 ### Google Account
 
 There are two ways to save your data:
 
 - **Anonymous** - data will be stored locally in your browser's memory
 - **Google account** - data will be stored in _Firestore_ and will be accessible from any device
+ 
+##Technologies Used
+ -**React JS**
+ -**CSS**
+ -**Firebase**: Backend-as-a-Service, providing the database for storing movie data.
+
 
 # Try it
 
