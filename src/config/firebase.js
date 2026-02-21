@@ -5,13 +5,13 @@ import { getFirestore } from 'firebase/firestore'
 import { getStorage } from 'firebase/storage'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCe4riI674SqXV4xI1HLgToS_fIqm4NH_M",
-  authDomain: "movie-calendar-martinez.firebaseapp.com",
-  projectId: "movie-calendar-martinez",
-  storageBucket: "movie-calendar-martinez.appspot.com",
-  messagingSenderId: "773941877569",
-  appId: "1:773941877569:web:fdb886ba04ad3d72dadfc0",
-  measurementId: "G-MSMN9MNTX4"
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
+  measurementId: import.meta.env.VITE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
